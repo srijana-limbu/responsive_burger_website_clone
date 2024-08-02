@@ -7,7 +7,7 @@
     margin-inline: auto;
   }
   .section {
-    padding-block: 7rem 2rem;
+    padding-block: 2.5rem 2rem;
   }
   .nav {
     height: calc(var(--header-height) + 2rem);

@@ -72,3 +72,17 @@ const scrollActive = () => {
 window.addEventListener("scroll", scrollActive);
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+// ScrollReveal is a js library that animates elements when they come into view while scrolling.
+const sr = ScrollReveal({
+  origin: "top", // The origin of the animation ('top', 'bottom', 'left', 'right', 'center')
+  distance: "60px", // Distance to travel before revealing
+  duration: 2500,
+  delay: 300,
+});
+sr.reveal(`.home-data, .footer`)
+sr.reveal(`.home-dish`, { delay: 500, distance: "100px", origin: "bottom" });
+sr.reveal(`.home-burger`, { delay: 1200, distance: "100px", duration: 1500 });
+sr.reveal(`.home-ingredient`, { delay: 1600, interval: 100 });
+sr.reveal(`.recipe-img, .delivery-img, .contact-image`, { origin: "left" });
+sr.reveal(`.recipe-data, .delivery-data, .contact-data`, { origin: "right" });
+sr.reveal(`.popular-card`, { interval: 100});
